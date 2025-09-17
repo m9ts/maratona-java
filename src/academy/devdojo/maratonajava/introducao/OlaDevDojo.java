@@ -6,3 +6,17 @@ public class OlaDevDojo {
     }
 }
 
+// COMENTÁRIOS
+
+// Isso é um comentário de uma linha
+
+/*
+    Isso é um comentário
+    de múltiplas
+    linhas
+ */
+
+/**
+ * Isso é um comentário <b>javadoc</b>
+ */
+
