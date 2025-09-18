@@ -4,10 +4,12 @@ public class TiposPrimitivos {
     public static void main(String[] args) {
         // int, double, float, byte, short, long, boolean
 
-        int age = 10;
-        long numeroGrande = 100000;
-        double salarioDouble = 2000;
-        float salarioFloat = 2500;
+        int age = (int) 10000000000L;
+
+        // Casting: é o processo de converter um valor de um tipo de dado para outro
+        long numeroGrande = (long) 155.23;
+        double salarioDouble = 2000.0D;
+        float salarioFloat = (float) 2500.0D;
         byte idadeByte = -128;
         short idadeShort = 10;
         boolean verdadeiro = true;
@@ -16,7 +18,7 @@ public class TiposPrimitivos {
         char charUnicode = '\u0043';
 
         System.out.println("A idade é " + age + " anos.");
-        System.out.println(idadeByte);
-        System.out.println(charUnicode);
+        System.out.println("Char: " + caractere);
+        System.out.println(numeroGrande);
     }
 }
