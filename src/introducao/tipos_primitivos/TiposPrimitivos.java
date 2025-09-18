@@ -17,6 +17,10 @@ public class TiposPrimitivos {
         char caractere = 77; // ASCII table
         char charUnicode = '\u0043';
 
+        // String é um tipo de referência, e não um tipo primitivo
+        String nome = "Jiraya";
+        System.out.println("Oi, meu nome é " + nome);
+
         System.out.println("A idade é " + age + " anos.");
         System.out.println("Char: " + caractere);
         System.out.println(numeroGrande);
