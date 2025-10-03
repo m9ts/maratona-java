@@ -10,6 +10,5 @@ public class EstruturasDeRepeticao02 {
             }
             System.out.println("i = " + i);
         }
-
     }
 }
