@@ -29,3 +29,4 @@ public class ArraysMultidimensionais01 {
         System.out.println("Valor: "+ dias[0][0]); // valor
     }
 }
+
