@@ -1,6 +1,6 @@
-package javacore_introducao_classes.test;
+package javacore.classes.test;
 
-import javacore_introducao_classes.dominio.Estudante;
+import javacore.classes.dominio.Estudante;
 
 public class EstudanteTest01 {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class EstudanteTest01 {
         estudante.sexo = 'F';
 
         System.out.println("Nome: " + estudante.nome);
-        System.out.println("Idade: " + estudante.idade);
+        System.out.println("Idade: " + estudante.idade + " anos");
         System.out.println("Sexo: " + estudante.sexo);
         System.out.println("Endereço de memória: " + estudante);
     }

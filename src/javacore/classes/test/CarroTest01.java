@@ -1,6 +1,6 @@
-package javacore_introducao_classes.test;
+package javacore.classes.test;
 
-import javacore_introducao_classes.dominio.Carro;
+import javacore.classes.dominio.Carro;
 
 public class CarroTest01 {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class CarroTest01 {
         carro2.modelo = "Comodoro";
 
         // Referência de ojbetos
-        carro2 = carro1; // isso só pode ser feito com objetos do mesmo tipo
+        //carro2 = carro1; // isso só pode ser feito com objetos do mesmo tipo
 
         System.out.println("----- CARRO ESPORTIVO ----");
         System.out.println("Nome: " + carro1.nome + "\nModelo: " + carro1.modelo + "\nAno: " + carro1.ano);
