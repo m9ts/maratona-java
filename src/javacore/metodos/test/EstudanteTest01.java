@@ -21,5 +21,10 @@ public class EstudanteTest01 {
 
         impEst.imprime(estudante01);
         impEst.imprime(estudante02);
+
+        System.out.println("--------------\nestudante.nome alterado: ");
+
+        impEst.imprime(estudante01);
+        impEst.imprime(estudante02);
     }
 }
