@@ -12,6 +12,8 @@ public class Funcionario {
         if (salarios == null) {
             return;
         }
+//        serve para evitar um erro (NullPointerException) caso o array salarios não tenha sido inicializado antes da execução do método.
+
         for (double salario : salarios) {
             System.out.println("R$ " + salario);
         }
