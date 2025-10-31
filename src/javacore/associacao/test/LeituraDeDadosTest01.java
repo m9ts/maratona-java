@@ -2,7 +2,7 @@ package javacore.associacao.test;
 
 import java.util.Scanner;
 
-public class LeituraDeDados {
+public class LeituraDeDadosTest01 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
