@@ -4,6 +4,12 @@ package javacore.heranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    // Sobrescrita
+    public void imprime() {
+        super.imprime(); // Chamando método da superclasse Pessoa
+        System.out.println("Salário: R$ " + this.salario);
+    }
+
     public double getSalario() {
         return salario;
     }
