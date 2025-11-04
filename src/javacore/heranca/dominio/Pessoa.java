@@ -1,9 +1,10 @@
 package javacore.heranca.dominio;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    // Todas as subsclasses de Pessoa e classes que estão no mesmo pacote terão acesso a esses atributos
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
 
     public void imprime() {
         System.out.println("Nome: " + this.nome + "\nCPF: " + this.cpf + "\nEndereço: " + this.endereco.getRua() + " - CEP: " + this.endereco.getCep());
