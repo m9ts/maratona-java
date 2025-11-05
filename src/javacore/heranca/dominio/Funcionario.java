@@ -4,6 +4,10 @@ package javacore.heranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    public Funcionario(String nome) {
+        super(nome); // Referenciando o construtor da superclasse Pessoa
+    }
+
     // Sobrescrita
     public void imprime() {
         super.imprime(); // Chamando método da superclasse Pessoa
