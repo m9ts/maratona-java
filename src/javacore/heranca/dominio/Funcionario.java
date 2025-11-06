@@ -4,8 +4,21 @@ package javacore.heranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de Funcionario");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de Funcionario 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de Funcionario 2");
+    }
+
     public Funcionario(String nome) {
         super(nome); // Referenciando o construtor da superclasse Pessoa
+        System.out.println("Dentro do construtor de Funcionario");
     }
 
     // Sobrescrita
