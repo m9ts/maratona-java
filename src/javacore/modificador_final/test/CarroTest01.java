@@ -1,5 +1,6 @@
 package javacore.modificador_final.test;
 
+import javacore.modificador_final.dominio.BMW;
 import javacore.modificador_final.dominio.Carro;
 import javacore.modificador_final.dominio.Comprador;
 
@@ -12,5 +13,9 @@ public class CarroTest01 {
 
         carro.COMPRADOR.setNome("Ana");
         System.out.println(carro.COMPRADOR);
+
+        BMW bmw = new BMW();
+        bmw.setModelo("M2 Competition");
+        bmw.imprime();
     }
 }
