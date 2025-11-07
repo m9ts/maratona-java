@@ -1,0 +1,25 @@
+package javacore.sobrescrita.dominio;
+
+public class Anime extends Object {
+    private String nome;
+
+    // Sobrescrita do método toString de Object
+    @Override
+    public String toString() {
+        return "Anime{" +
+                "nome='" + nome + '\'' +
+                '}';
+    }
+
+    public Anime(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
