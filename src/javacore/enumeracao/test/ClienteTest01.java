@@ -2,13 +2,16 @@ package javacore.enumeracao.test;
 
 import javacore.enumeracao.dominio.Cliente;
 import javacore.enumeracao.dominio.TipoCliente;
+import javacore.enumeracao.dominio.TipoPagamento;
 
 public class ClienteTest01 {
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente("Mateus", TipoCliente.PESSOA_FISICA, Cliente.TipoPagamento.CREDITO);
-        Cliente cliente2 = new Cliente("Adagoberto", TipoCliente.PESSOA_JURIDICA, Cliente.TipoPagamento.DEBITO);
+        Cliente cliente1 = new Cliente("Mateus", TipoCliente.PESSOA_FISICA, TipoPagamento.CREDITO);
+        Cliente cliente2 = new Cliente("Adagoberto", TipoCliente.PESSOA_JURIDICA, TipoPagamento.DEBITO);
 
         System.out.println(cliente1);
         System.out.println(cliente2);
+        System.out.println("Desconto no débito (%): " + TipoPagamento.DEBITO.calcularDesconto(100));
+        System.out.println("Desconto no crédito (%): " + TipoPagamento.CREDITO.calcularDesconto(100));
     }
 }
