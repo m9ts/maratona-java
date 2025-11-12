@@ -10,4 +10,9 @@ public abstract class Funcionario {
         this.nome = nome;
         this.salario = salario;
     }
+
+    // Método abstrato não possui corpo e é utilizado para ser sobrescrito
+    // Métodos abstratos só existem em classes abstratas
+    // Classes abstratas podem ter métodos concretos e métodos abstratos
+    public abstract void calculaBonus();
 }
