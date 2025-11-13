@@ -1,9 +1,20 @@
 package javacore.interfaces.dominio;
 
 // Utiliza-se 'implements' para implementar uma interface
-public class DatabaseLoader implements DataLoader {
+// Uma classe concreta permite a implementação de múltiplas interfaces
+public class DatabaseLoader implements DataLoader, DataRemover {
     @Override
     public void load() {
         System.out.println("Carregando dados do banco de dados...");
+    }
+
+    @Override
+    public void remove() {
+        System.out.println("Removendo dados do banco de dados...");
+    }
+
+    @Override
+    public void checkPermission() {
+        System.out.println("Checando permissões no banco de dados...");
     }
 }
