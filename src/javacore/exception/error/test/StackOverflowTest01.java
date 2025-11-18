@@ -1,4 +1,4 @@
-package javacore.exception.test;
+package javacore.exception.error.test;
 
 // Exceções são "condições anormais" que desviam o fluxo normal do programa
 // Ex.: NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException
