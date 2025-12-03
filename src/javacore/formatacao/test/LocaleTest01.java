@@ -1,4 +1,4 @@
-package javacore.dates.test;
+package javacore.formatacao.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
