@@ -2,6 +2,7 @@ package javacore.formatacao.test;
 
 // classe abstrata
 import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.Locale;
 
 public class NumberFormatTest01 {
@@ -19,10 +20,19 @@ public class NumberFormatTest01 {
         numberFormats[3] = NumberFormat.getInstance(localeGermany);
         numberFormats[4] = NumberFormat.getInstance(localeBR);
 
-        double valor = 10_000.2130;
+        double valor = 1000.2130;
         for (NumberFormat numberFormat : numberFormats) {
+            numberFormat.setMaximumFractionDigits(2);
+            //System.out.println("Dígitos: " + numberFormat.getMaximumFractionDigits());
             System.out.println("Formatação numérica: " + numberFormat.format(valor));
         }
 
+        String valorString = "1000.2130";
+
+        try {
+            System.out.println(numberFormats[3].parse(valorString));
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
